@@ -1,3 +1,4 @@
+package com.javafx;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -59,5 +60,9 @@ public class Node implements Comparable<Node>{
     @Override
     public int compareTo(Node o) {
         return Integer.compare(this.cost, o.getCost());
+    }
+
+    public static void setVisited(ArrayList<Node> visited) {
+        Node.visited = visited;
     }
 }
